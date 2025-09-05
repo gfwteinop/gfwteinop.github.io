@@ -2,34 +2,108 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>My Code Examples</title>
+  <title>George Foteinopoulos - Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .project {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .project p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .project a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Code Examples</h1>
 
-  <h2>Embedded C Example</h2>
-  <pre><code>
-// Simple blinking LED in C
-void main(void) {
-    while(1) {
-        toggleLED();
-        delay(1000);
-    }
-}
-  </code></pre>
+  <!-- Top navigation bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="George_Foteinopoulos_CV.pdf">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+  </nav>
 
-  <h2>Python Example</h2>
-  <pre><code>
-# Fibonacci sequence in Python
-def fib(n):
-    a, b = 0, 1
-    for _ in range(n):
-        print(a)
-        a, b = b, a+b
+  <div class="container">
+    <h1>Projects</h1>
 
-fib(10)
-  </code></pre>
+    <!-- Thesis Project -->
+    <div class="project">
+      <h2>Thesis Project</h2>
+      <p>
+        A brief description of your thesis project goes here. You can include key goals, technologies used, and outcomes.
+      </p>
+      <p>
+        <a href="Thesis.pdf">View Thesis</a>
+      </p>
+    </div>
 
-  <p><a href="index.html">Back to homepage</a></p>
+    <!-- eSolar Project -->
+    <div class="project">
+      <h2>eSolar Project</h2>
+      <p>
+        Short description of the eSolar project. Mention your role, key technologies, and any results or achievements.
+      </p>
+      <p>
+        <a href="link-to-code-or-documentation-if-any">View Project</a>
+      </p>
+    </div>
+
+    <!-- Additional projects can be added here in similar blocks -->
+
+  </div>
 </body>
 </html>
